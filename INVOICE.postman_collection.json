@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "0ddfc499-00f4-407d-bfb3-0ea8389f942a",
+		"name": "INVOICE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/invoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "2023-09-15",
+							"type": "text"
+						},
+						{
+							"key": "end",
+							"value": "2023-09-30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/invoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invoice"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
